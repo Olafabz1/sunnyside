@@ -1,507 +1,330 @@
-*{
-  margin:0;
-  padding:0;
-  max-width:1440px;
+* {
+  margin: 0;
+  padding: 0;
 }
-.agency{
-  width:100%;
+body {
   overflow-x: hidden;
+  width: 100vw;
 }
-header{
-  width:100%;
-  margin:20px auto;
+nav {
+  display: flex;
+  position: fixed;
+  background: none;
+  top: 0;
+  z-index: 100;
+  width: 90vw;
+  backdrop-filter: blur(15px);
+  color: #000;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+nav h4 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+}
+nav ul {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+}
+nav ul li {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+  color: #000;
+}
+li .phone {
+  color: #000;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 10px;
+  font-weight: bold;
+}
+header {
+  height: 100vh;
   position: relative;
-}
-header img{
-width:100%;
-height:500px;
-}
-nav{
   display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000;
+  justify-content: center;
+}
+.header__background {
+  width: 100%;
+  height: 100vh;
   position: absolute;
-  top:30px;
-  left: 30px;
+  top: 0;
+  bottom: 0;
+  z-index: -10;
+  object-fit: cover;
 }
-nav h4{
-  color: #ffff;
-  font-family: fraunces;
-  font-size: 18px;
-}
-nav ul{
-  position: absolute;
-  top:-15px;
-  left:1000px;
-  list-style-type: none;
-  display: flex;
-}
-nav li{
-  margin: 12px;
-  padding:5px;
-}
-nav a{
-  font-size:14px;
- text-decoration: none;
- color: #ffff;
-}
-nav .phone{
-  width:80px;
-  height:20px;
-  border: none;
-  border-radius: 20px;
-  background-color: #ffffff;
-}
-.phone a{
-color: #000;
-font-size:14px ;
-text-transform: uppercase;
-padding: 10px;
-font-weight: bold;
-}
-.creative{
-width:600px;
-position: absolute;
-top: 180px;
-left:400px ;
-}
-.creative h3{
-  color: hsl(0, 0%, 100%);
-  font-family: fraunces;
+
+.creative h3 {
+  color: #fff;
+  font-family: "Fraunces", serif;
   font-size: 22px;
-  word-spacing:10px;
+  word-spacing: 10px;
   letter-spacing: 10px;
   text-align: center;
   line-height: 35px;
 }
-.creative img{
-  margin-left:300px;
-  margin-top:30px;
+.creative img {
   width: 10px;
   height: 40px;
 }
 /*End of header*/
 
- .transform{
-  width:100% ;
+.transform {
   display: flex;
- margin-top:-25px ;
+}
+.brand {
+  padding: 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  width: 1350px;
+}
+div h4 {
+  width: 100%;
+  font-family: "Fraunces", serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.brand p,
+.formula p {
+  display: flex;
+  flex-direction: column;
+}
+.image {
+  background: url("./images/desktop/image-transform.jpg");
+  width: 100%;
+  height: 600px;
+}
 
-}
-.brand{
-  width:35%;
-  position: relative;
-}
-.image{
-  width:65% ;
-}
-.image img{
-  margin-left:215px;
-}
-.transform h4 {
-  font-family: fraunces;
-  font-weight: 900;
-  font-size: 18px;
-  line-height: 30px;
-  position: absolute;
-  top:150px;
-  left:100px;
-}
-.transform p {
-  font-size: 12px;
-  font-family: barlow;
-  font-weight: 100;
-  line-height: 20px;
-  margin-top: -10px;
-  word-spacing:8px ;
-  color: hsl(232, 10%, 55%);
-  position: absolute;
-  top: 230px;
-  left:100px;
-}
 span {
-  display: block;
+  font-size: 12px;
   margin-top: 10px;
 }
 span a {
   color: black;
   text-transform: uppercase;
-  font-family: fraunces;
-  font-weight: bold; 
+  font-family: "Fraunces", serif;
+  font-weight: bold;
 }
 /*End of transform*/
 
-.audience{
-width: 100%;
-margin-top:-4px;
-display: flex;
+.audience {
+  display: flex;
 }
-.standout{
-width:65%;
+.formula {
+  padding: 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  width: 1350px;
 }
-.formula{
-  width: 35%;
-  position: relative;
-}
-.audience h4{
-  font-family: fraunces;
-  font-weight: 900;
-  font-size: 18px;
-  line-height: 30px;
-  position: absolute;
-  top: 150px;
-  left:0px;
-}
-.audience p{
-  font-size: 12px;
-    font-family: barlow;
-    font-weight: 100;
-    line-height: 20px;
-    margin-top: -10px;
-    word-spacing: 8px;
-    color: hsl(232, 10%, 55%);
-    position: absolute;
-    top: 230px;
-    left: 0px;
+.standout {
+  background: url("./images/desktop/image-stand-out.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 600px;
+  background-size: cover;
+  object-fit: cover;
 }
 /*End of audience*/
 
-.artwork{
-  width: 100%;
+.artwork {
   display: flex;
-  margin-top:-4px;
-  position: relative;
+}
+.design {
+  background: url("./images/desktop/image-graphic-design.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 600px;
+  object-fit: cover;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.business {
+  background: url("./images/desktop/image-photography.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.graphics,
+.graphic {
+  margin-top: 200px;
+  text-align: center;
+  width: 250px;
 }
 .design h4 {
-  font-family: fraunces;
+  font-family: "Fraunces", serif;
   font-weight: 900;
-  font-size: 15px;
-  color: hsl(167, 40%, 24%);
+  font-size: 20px;
+  color: #153d34;
 }
 .design p {
-  font-size: 11px;
-  font-family: barlow;
-  font-weight: 100;
-  line-height:20px;
-  margin-top:10px;
-  color: hsl(167, 40%, 24%);
+  font-size: 13px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  color: #26574c;
 }
 .business h4 {
-  font-family: fraunces;
+  font-family: "Fraunces", serif;
   font-weight: 900;
-  font-size: 15px;
-  color: hsl(198, 62%, 26%);
+  font-size: 20px;
+  color: #0a2530;
 }
 .business p {
-  font-size: 11px;
-  font-family: barlow;
-  font-weight: 100;
-  line-height:20px;
-  color: hsl(198, 62%, 26%);
-}
-.graphic{
-width: 250px;
-text-align: center;
-position: absolute; 
-bottom:170px;
-left: 200px;
-}
-.graphics {
-width: 250px;
-text-align: center;
-position: absolute;
-bottom: 180px;
-left:950px ;
+  font-size: 13px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  color: #061a23;
 }
 /*End of artwork*/
 
-.testimonial{
-  width:100% ;
-  padding-top: 50px;
+.testimonial {
+  padding: 50px 0;
   text-align: center;
 }
-.recommendation{
-  width:80% ;
+.recommendation {
   display: flex;
-  margin-left:100px;
-  padding: 40px;
+  padding: 40px 40px 0 40px;
 }
 .testimonial img {
-  width:50px;
-  border-radius:50px;
+  width: 50px;
+  border-radius: 50px;
 }
 .testimonial p {
-  width: 90%;
-  font-family: barlow;
+  font-family: "Barlow", sans-serif;
   font-size: 11px;
-  font-weight: 100;
+  font-weight: 500;
   line-height: 20px;
-  padding:20px;
-  color: hsl(213, 9%, 39%)
+  padding: 20px;
+  color: #59626b;
 }
 .testimonial h3 {
   text-transform: uppercase;
-  font-family: fraunces;
-  font-size: 12px;
-  color: hsl(210, 4%, 67%);
+  font-family: "Fraunces", serif;
+  font-size: 20px;
+  color: #4d5253;
   letter-spacing: 3px;
 }
 .recommendation span {
-  font-family: fraunces;
+  font-family: "Fraunces", serif;
   font-size: 12px;
   font-weight: bold;
-  color: hsl(212, 27%, 19%);
+  color: #24303d;
 }
 small {
-  font-family: barlow;
+  font-family: "Barlow", sans-serif;
   font-size: 10px;
-  color: hsl(210, 4%, 67%);
+  color: #787a7c;
 }
 /*End of testimonial*/
 
-.gallery{
-  width:100%;
+.gallery {
   display: flex;
 }
-.gallery img{
-  width:360px;
+.gallery img {
+  width: 380px;
+  object-fit: cover;
 }
 /*End of gallery*/
 
-footer{
-  width:100%;
-  height:200px ;
-  margin-top:-4px ;
-  padding:30px;
-  background-color: hsl(168, 34%, 41%);
-  position: relative;
-}
-.socials {
-  padding: 10px;
+footer {
+  height: 200px;
+  padding: 30px;
+  background-color: #458c7e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .reach {
   font-size: 20px;
+  text-transform: capitalize;
   font-weight: bold;
-  color: hsl(167, 40%, 24%);
-  margin-top:10px ;
-  position: absolute;
-  left:700px ;
+  color: #143830;
+  margin-top: 10px;
 }
 footer ul {
-  width: 50%;
+  width: 200px;
   display: flex;
+  justify-content: space-between;
   list-style-type: none;
   text-align: center;
-  margin-top: 50px;
-  position: absolute;
-  left: 600px;
 }
-footer li a {
-  color: hsl(167, 40%, 24%);
-  font-family: barlow;
+footer li {
+  color: #11322b;
+  font-family: "Barlow", sans-serif;
   font-size: 12px;
-  margin: 10px;
-  padding: 18px;
   text-decoration: none;
 }
+
 footer .links {
-  width: 40%;
-  margin-top: 100px;
-  position: absolute;
-  left:670px;
-}
-footer img {
-  width: 12px;
-  display: inline-block;
-  margin: 0;
-  padding:10px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  width: 200px;
+  justify-content: space-between;
+  margin: 10px 0;
 }
 /*media query*/
 
-@media screen and (max-width:1440px) {
-
-  
-  header {
-    width: 100%;
-    margin: 20px auto;
-    position: relative;
-  }
-
-  header img {
-    width: 100%;
-    height: 500px;
-  }
-
-  nav {
-    display: flex;
-    position: absolute;
-    top: 30px;
-    left: 30px;
-  }
-
+@media screen and (max-width: 1500px) {
   nav h4 {
-    color: #ffff;
-    font-family: fraunces;
-    font-size: 18px;
+    font-size: 30px;
   }
-
-  nav ul {
-    position: absolute;
-    top: -15px;
-    left:900px;
-    list-style-type: none;
-    display: flex;
+  header {
+    height: 50vh;
   }
-
-  nav li {
-    margin: 10px;
-    padding: 5px;
-  }
-
-  nav a {
-    font-size: 14px;
-    text-decoration: none;
-    color: #ffff;
-  }
-
-  nav .phone {
-    width: 80px;
-    height: 20px;
-    border: none;
-    border-radius: 20px;
-    background-color: #ffffff;
-  }
-
-  .phone a {
-    color: #000;
-    font-size: 14px;
-    text-transform: uppercase;
-    padding: 10px;
-    font-weight: bold;
-  }
-
-  .creative {
-    width: 600px;
-    position: absolute;
-    top: 180px;
-    left: 400px;
-  }
-
-  .creative h3 {
-    color: hsl(0, 0%, 100%);
-    font-family: fraunces;
-    font-size: 22px;
-    word-spacing: 10px;
-    letter-spacing: 10px;
-    text-align: center;
-    line-height: 35px;
-  }
-
-  .creative img {
-    margin-left: 300px;
-    margin-top: 30px;
-    width: 10px;
-    height: 40px;
+  .header__background {
+    height: 50vh;
   }
 
   /*End of header*/
 
   .transform {
-    width: 100%;
     display: flex;
-    margin-top: -25px;
-
   }
-
   .brand {
-    width: 35%;
-    position: relative;
-  }
-
-  .image {
-    width: 70%;
-  }
-
-  .image img {
-    width:720px;
-    margin-left:270px;
-  }
-
-  .transform h4 {
-    font-family: fraunces;
-    font-weight: 900;
-    font-size: 18px;
-    line-height: 30px;
-    position: absolute;
-    top: 150px;
-    left: 100px;
-  }
-
-  .transform p {
-    font-size: 12px;
-    font-family: barlow;
-    font-weight: 100;
-    line-height: 20px;
-    margin-top: -10px;
-    word-spacing: 8px;
-    color: hsl(232, 10%, 55%);
-    position: absolute;
-    top: 230px;
-    left: 100px;
-  }
-
-  span {
-    display: block;
-    margin-top: 10px;
-  }
-
-  span a {
-    color: black;
-    text-transform: uppercase;
-    font-family: fraunces;
-    font-weight: bold;
+    width: 80%;
   }
 
   /*End of transform*/
 
   .audience {
     width: 100%;
-    margin-top: -4px;
     display: flex;
   }
 
-  .standout {
-    width: 60%;
-  }
-
   .formula {
-    width: 30%;
-    position: relative;
+    width: 95%;
   }
 
   .standout img {
     width: 720px;
-  }
-
-  .audience h4 {
-    font-family: fraunces;
-    font-weight: 900;
-    font-size: 18px;
-    line-height: 30px;
-    position: absolute;
-    top: 150px;
-    left: 0px;
-  }
-
-  .audience p {
-    font-size: 12px;
-    font-family: barlow;
-    font-weight: 100;
-    line-height: 20px;
-    margin-top: -10px;
-    word-spacing: 8px;
-    color: hsl(232, 10%, 55%);
-    position: absolute;
-    top: 230px;
-    left: 0px;
   }
 
   /*End of audience*/
@@ -509,177 +332,63 @@ footer img {
   .artwork {
     width: 100%;
     display: flex;
-    margin-top: -4px;
-    position: relative;
-  }
-
-  .design h4 {
-    font-family: fraunces;
-    font-weight: 900;
-    font-size: 15px;
-    color: hsl(167, 40%, 24%);
-  }
-
-  .design p {
-    font-size: 11px;
-    font-family: barlow;
-    font-weight: 100;
-    line-height: 20px;
-    margin-top: 10px;
-    color: hsl(167, 40%, 24%);
-  }
-
-  .business h4 {
-    font-family: fraunces;
-    font-weight: 900;
-    font-size: 15px;
-    color: hsl(198, 62%, 26%);
-  }
-
-  .business p {
-    font-size: 11px;
-    font-family: barlow;
-    font-weight: 100;
-    line-height: 20px;
-    color: hsl(198, 62%, 26%);
-  }
-
-  .graphic {
-    width: 250px;
-    text-align: center;
-    position: absolute;
-    bottom: 170px;
-    left: 200px;
-  }
-
-  .graphics {
-    width: 250px;
-    text-align: center;
-    position: absolute;
-    bottom: 180px;
-    left: 950px;
   }
 
   /*End of artwork*/
 
-  .testimonial {
-    width: 100%;
-    padding-top: 50px;
-    text-align: center;
-  }
-
-  .recommendation {
-    width: 80%;
-    display: flex;
-    margin-left: 100px;
-    padding: 40px;
-  }
-
-  .testimonial img {
-    width: 50px;
-    border-radius: 50px;
-  }
-
-  .testimonial p {
-    width: 90%;
-    font-family: barlow;
-    font-size: 11px;
-    font-weight: 100;
-    line-height: 20px;
-    padding: 20px;
-    color: hsl(213, 9%, 39%)
-  }
-
-  .testimonial h3 {
-    text-transform: uppercase;
-    font-family: fraunces;
-    font-size: 12px;
-    color: hsl(210, 4%, 67%);
-    letter-spacing: 3px;
-  }
-
-  .recommendation span {
-    font-family: fraunces;
-    font-size: 12px;
-    font-weight: bold;
-    color: hsl(212, 27%, 19%);
-  }
-
-  small {
-    font-family: barlow;
-    font-size: 10px;
-    color: hsl(210, 4%, 67%);
-  }
-
-  /*End of testimonial*/
-
   .gallery {
-    width: 100%;
     display: flex;
   }
 
   .gallery img {
-    width: 360px;
-  }
-
-  /*End of gallery*/
-
-  footer {
-    width: 100%;
-    height: 200px;
-    margin-top: -4px;
-    padding: 30px;
-    background-color: hsl(168, 34%, 41%);
-    position: relative;
-  }
-
-  .socials {
-    padding: 10px;
-  }
-
-  .reach {
-    font-size: 20px;
-    font-weight: bold;
-    color: hsl(167, 40%, 24%);
-    margin-top: 10px;
-    position: absolute;
-    left: 700px;
-  }
-
-  footer ul {
-    width: 50%;
-    display: flex;
-    list-style-type: none;
-    text-align: center;
-    margin-top: 50px;
-    position: absolute;
-    left: 600px;
-  }
-
-  footer li a {
-    color: hsl(167, 40%, 24%);
-    font-family: barlow;
-    font-size: 12px;
-    margin: 10px;
-    padding: 18px;
-    text-decoration: none;
-  }
-
-  footer .links {
-    width: 40%;
-    margin-top: 100px;
-    position: absolute;
-    left: 670px;
-  }
-
-  footer img {
-    width: 12px;
-    display: inline-block;
-    margin: 0;
-    padding: 10px;
+    width: 320px;
   }
 }
 /*End of 1500pc query*/
 
-@media screen and (max-width:950px) {
+@media screen and (max-width: 1100px) {
+  nav{
+    width: 95%;
+  }
+  .standout,
+  .image {
+    width: 1100px;
+    background-position: center;
+  }
+  .business,
+  .design {
+    background-position: center;
+  }
+  .gallery {
+    overflow-x: scroll;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .transform {
+    flex-direction: column;
+  }
+  .media-height {
+    height: 400px;
+    width: 600px;
+  }
+  .image{
+    width: 100%;
+  }
+  .audience {
+    flex-direction: column-reverse;
+  }
+  .standout{
+  display: none;
+  }
+  .artwork{
+    flex-direction: column;
+  }
+  .business{
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+
 }

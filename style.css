@@ -39,12 +39,35 @@ li a {
   text-decoration: none;
   color: #000;
 }
-li .phone {
+li #phone {
   color: #000;
   font-size: 14px;
   text-transform: uppercase;
   padding: 10px;
   font-weight: bold;
+}
+.sidebar{
+  position: fixed;
+  top: 0;
+  right:0;
+  height:100vh;
+  width:250px;
+  z-index:999;
+  background-color: white;
+  backdrop-filter:blur(10px);
+  display: none;
+  flex-direction:column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li{
+  width:100%;
+}
+.sidebar a{
+  width: 100%;
+}
+.menu-button{
+  display:none;
 }
 header {
   height: 100vh;
@@ -370,7 +393,7 @@ footer .links {
   }
   .media-height {
     height: 400px;
-    width: 600px;
+    width: 550px;
   }
   .image{
     width: 100%;
@@ -387,8 +410,58 @@ footer .links {
   .business{
     height: 600px;
   }
-}
+
+ }
+
 
 @media screen and (max-width: 650px) {
 
+.hideOnMobile {
+  display:none ;
+}
+.menu-button{
+  display: block;
+  margin: auto;
+}
+.sidebar{
+  width: 100%;
+  padding-top:30px;
+}
+nav ul li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #000;
+  display:flex ;
+ justify-content: center;
+ margin-bottom: 8px;
+}
+
+nav h4{
+  font-size:14px;
+}
+ .brand{
+width:400px;
+}
+.formula {
+  width:400px;
+} 
+.recommendation{
+  flex-direction: column;
+}
+}
+
+@media screen and (max-width: 450px){  
+  .menu-button {
+      display: block;  
+    }
+  .brand {
+      width: 200px;
+    }
+  
+    .formula {
+      width: 200px;
+    }
 }
